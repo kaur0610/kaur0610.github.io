@@ -1,0 +1,296 @@
+* {
+	box-sizing: border-box;
+}
+	body{
+		background-color: #F7F7FF;
+		font-family: Montserrat, sans-serif, arial;
+	}
+
+		/*Defaut Mobile View*/
+	
+	/*logo*/
+	.image img{
+		width: 50%;
+		height: auto;
+	}
+
+	.contain h1{
+		font-size: 60px;
+		font-weight: bold;
+		line-height: 1.2;
+		margin: 1rem 2rem 1rem 2rem;
+	}
+
+	.contain p{
+		font-size: 24px;
+		line-height: 1.1;
+		margin: 1rem 2rem 1rem 2rem;
+	}
+
+	/*responsive image scootergirl*/
+	.image1 img{
+		max-width: 100%;
+		height: auto;
+		padding: 0 2rem 0 2rem;
+	}
+
+	.form{
+		background-color: white;
+		box-shadow: 9px 9px 25px grey;
+		border-radius: 25px;
+		padding: 1rem;
+		margin: 2rem;
+
+	}
+
+	/*first text inside the form*/
+	legend{
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+	/*second text inside the form*/
+	fieldset p{
+		font-size: 16px;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	
+	input{
+		background-color: #F9F9FA;
+		border: #F9F9FA;
+		border-radius: 10px;
+		padding: 0.5rem;
+		margin: 0.2rem;
+	}
+
+	/*specificty to not target checkbox*/
+	#fname, #lname, #phone, #email, button{
+		width: 100%;
+	}
+
+	button{
+		background-color: #57EEAB;
+		font-size: 24px;
+		font-weight: bold;
+		border: #57EEAB;
+		border-radius: 10px;
+		padding: 0.5rem;
+		margin: 0.5rem;
+
+	}
+
+	/* text after the button*/
+	.form a{
+		color: red;
+		text-decoration: none;
+	}
+
+	.footer {
+		background-color: #FFFD8C;
+		padding: 1.5rem;
+
+	}
+
+	.footer h2{
+		font-size: 16px;
+		font-weight: bold;
+		margin: 0.5rem;
+	}
+
+	.footer p{
+		font-size: 16px;
+		margin: 0.5rem; 
+	}
+
+	.footer2 {
+		display: grid;
+		grid-template-columns: 30% 70%;
+		/*grid-gap: 5rem;*/
+	}
+
+	.footer2 fieldset{
+		margin: 0.2rem;
+	}
+
+	input#city {
+		margin-left: 2%;
+		width: 100%;
+	}
+
+	input#hours {
+		width: 100%;
+	}
+
+	
+	#calculate{
+		background-color: #FF8480;
+		font-size: 24px;
+		width: 100%;
+		color: white;
+		font-weight: bold;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	/*using flex to adjust in other views*/
+	.icon {
+		display: flex;
+		justify-content: space-around;
+	}
+
+
+		/*Tablet View*/
+
+	@media (min-width: 768px){
+
+		.image img{
+			width: 25%;
+			margin: 48px;
+		}
+		.contain h1{
+			font-size: 80px;
+			margin: 48px;
+			margin-top: 0;
+		}
+
+		.contain p{
+			margin: 48px;
+		}
+
+		.image1 img{
+			padding: 0 5rem 0 5rem;
+			margin-bottom: 2rem;
+		}
+
+		.form{
+			margin: 3rem;
+			padding-right: 3rem;
+		}
+
+		legend{
+			margin: 1rem 0 0 1rem;
+		}
+
+		fieldset p{
+			margin-left: 1rem;
+		}
+
+		input{
+			margin-left: 1rem;
+		}
+
+		button{
+			margin-left: 1rem;
+		}
+
+		fieldset p:nth-child(1){
+			text-align: center;
+		}
+
+		.footer h2{
+			margin-left: 2rem;
+		}
+
+		.footer p{
+			margin-left: 2rem;
+		}
+
+		/* get calculate button with other two tabs*/
+		.form1 {
+			display: grid;
+			grid-template-columns: 35% 55% 75%;
+		}
+
+		input#city {
+			margin-left: 1.5rem;
+			width: 100%;
+		}
+
+		input#hours {
+			width: 100%;
+			margin-left: 1.5rem;
+		}
+
+		#calculate{
+			margin-top: 0;
+			padding: 0.5rem;
+			width: 100%;
+			margin-left: 2rem;
+
+		}
+
+		/*use margin to space out icons*/
+		.icon {
+			justify-content: space-between;
+			margin-right: 15rem;
+			margin-left: 15rem;
+
+		}
+
+	}
+
+		/* Desktop View */
+	@media (min-width: 1281px){
+
+
+		.image img{
+			width: 10%;
+			margin-left: 4rem;
+		}
+
+		.contain h1{
+			line-height: 1.0;
+			margin-left: 5rem;
+		}
+
+		.contain p{
+			margin-left: 5rem;
+		}
+
+
+		.footer h2{
+			margin-left: 4rem;
+		}
+
+		.footer p{
+			margin-left: 4rem;
+		}
+
+		.main{
+			display: grid;
+			grid-template-columns: 40% 30% 30%;
+		}
+
+		.image1 img{
+			padding: 0;
+			margin: 0;
+		}
+
+		.form1 {
+			display: grid;
+			grid-template-columns: 30% 20% 50%;
+		}
+
+
+		input#hours {
+			margin-left: 4rem;
+		}
+
+		input#city {
+			margin-left: 4rem;
+
+		}
+
+		
+		#calculate {
+			margin-left: 5rem;
+		}
+
+		.icon {
+			margin-left: 80rem;
+
+		}
+
+	}

@@ -1,0 +1,86 @@
+body{
+	font-family: FiraSans-Bold, sans-serif;
+}
+/*Home*/
+/*custom navigation background color*/
+.navbar{
+	background-color: #F7F2F3;
+}
+/*removed black border*/
+.custom-toggler.navbar-toggler { 
+	border:none;
+} 
+/*nav links*/
+#navbarNav a{
+	color: #B5838D;
+}
+#navbarNav  a:hover{
+	color: #B5838D;
+	opacity: 0.7;
+}
+/*homepage heading, and all other pages main heading */
+.wrapper1 h1,.wrapper3 h1{
+	font-family: CormorantGaramond, serif;
+	font-style: italic;
+	color: #D65C60;
+}
+/*homepage heading center it*/
+.wrapper1 h1{
+	padding-right: 30px;
+	padding-left: 30px;
+}
+/*homepage and location text*/
+.wrapper1 p, div> p{
+	font-weight: 200;
+	color: #AB737E;
+}
+
+/*Footer*/
+.container-fluid{
+	background-color: #F7F2F3;
+}
+
+footer p{
+	color: #8F2D56;
+	font-family: CormorantGaramond, serif;
+}
+
+
+/*About*/
+/*text and image in about page, and headin in contact page*/
+.wrapper h3, .form h4, .wrapper h4{
+	font-family: CormorantGaramond, serif;
+	color: #B42D31;
+}
+
+/*Portfolio*/
+.card h5{
+	font-family: CormorantGaramond, serif;
+	color: #B42D31;
+}
+
+/*Contact*/
+iframe{
+	width: 100%;
+	height: auto;
+	border: 0;
+}
+
+/*Tablet View*/
+@media(min-width: 768px){
+	/*logo*/
+	.navbar img{
+		width: 15%;
+		height: auto;
+	}
+
+}
+/*Desktop View*/
+@media(min-width: 1025px){
+	/*logo resize*/
+	.navbar img{
+		width: 10%;
+		height: auto;
+	}
+
+}
